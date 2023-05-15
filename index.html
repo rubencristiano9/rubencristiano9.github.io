@@ -10,33 +10,28 @@
 </head>
 <body>
     <h1>Save the Children: Make a Difference Today</h1>
-    <p>Meet Maria. Maria is 6 years old and lives in a village where access to basic education and healthcare is a challenge. But with a small donation, you can help Maria and other children get the resources they need to live a healthier and brighter life.</p>
-
-    <h2>Your Donation Makes an Impact</h2>
-    <ul>
-        <li>$25 - Provides a month's supply of life-saving nutrition to a child in need.</li>
-        <li>$50 - Can provide 50 books to a school library.</li>
-        <li>$100 - Can provide a year's supply of school materials for a classroom.</li>
-    </ul>
-
-    <h2>Choose Your Donation</h2>
     <form>
-        <input type="radio" id="donation25" name="donation" value="25">
-        <label for="donation25">$25</label><br>
-        <input type="radio" id="donation50" name="donation" value="50">
-        <label for="donation50">$50</label><br>
-        <input type="radio" id="donation100" name="donation" value="100">
-        <label for="donation100">$100</label><br>
-        <input type="radio" id="donationOther" name="donation" value="other">
-        <label for="donationOther">Other:</label>
-        <input type="text" id="donationOtherAmount" name="donationOtherAmount"><br>
-        <input type="submit" value="Donate Now">
+        <h2>1. Basic Donation</h2>
+        <p>How much would you like to donate?</p>
+        <input type="number" id="basicDonation" name="basicDonation" min="1" step="1">
+
+        <h2>2. Matched Donation</h2>
+        <p>Our generous partner will match your donation, doubling the impact. How much would you like to donate?</p>
+        <input type="number" id="matchedDonation" name="matchedDonation" min="1" step="1">
+
+        <h2>3. Specific Impact</h2>
+        <p>$25 can provide a month's supply of life-saving nutrition to a child in need. How many children would you like to help?</p>
+        <input type="number" id="specificImpactDonation" name="specificImpactDonation" min="1" step="1">
+
+        <h2>4. Social Proof</h2>
+        <p>Join the thousands of others who have donated and made a difference. The average donation is $50. How much would you like to donate?</p>
+        <input type="number" id="socialProofDonation" name="socialProofDonation" min="1" step="1">
+
+        <h2>5. Urgency</h2>
+        <p>Children need your help now more than ever. How much would you like to donate today?</p>
+        <input type="number" id="urgencyDonation" name="urgencyDonation" min="1" step="1">
+
+        <input type="submit" value="Submit">
     </form>
-
-    <h2>Double Your Impact</h2>
-    <p>For every dollar you donate, our generous partner will match your donation, doubling the impact of your gift.</p>
-
-    <h2>Join Our Community</h2>
-    <p>Join the thousands of others who have donated and made a difference. Be a part of this positive change.</p>
 </body>
 </html>
